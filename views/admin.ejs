@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Administration - Ny produkt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/administration.css"  type="text/css">
+</head>
+<body>
+    <script src="/js/admin.js"></script>
+    <div class="view">
+        <div class="top-bar">
+            Administration
+        </div>
+        <div class="content-container">
+            <aside class="sidebar">
+                <h2>Produkter</h2>
+            </aside>
+
+            <main class="main-content">
+                <header class="page-header">
+                    <h1>Produkter</h1>
+                    <div>
+                        <button class="new-product-btn" id="fetch-all-products-button">
+                            Ladda produkter
+                        </button>
+                        <a href="/admin/new-product" class="new-product-btn">Ny produkt</a>
+                    </div>
+                </header>
+
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>Namn</th>
+                            <th>SKU</th>
+                            <th>Pris</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="products-table-body">
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
